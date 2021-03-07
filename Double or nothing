@@ -1,0 +1,114 @@
+import random
+money = 5000
+print("""///////////Double or Nothing\\\\\\\\\\\\\\\\\\\\\\""")
+print("Tutorial:")
+print("to continue type 'Continue' and to cash out type 'Cash out' Enjoy!")
+for i in range(9999999999999999999999):
+    if money >= 5:
+        money -= 5
+        if random.randint(1, 2) == 1:
+            print("2X")
+            check = input("Would you like to cash out:")
+            if check == "Cash out":
+                print("You have cashed out!")
+                money += 10
+                print(money)
+                input()
+            elif check == "Continue": 
+                if random.randint(1,3) == 1:
+                    print("3X")
+                    check = input("Would you like to cash out:")
+                    if check == "Cash out":
+                        print("You have cashed out!")
+                        money += 20
+                        print(money)
+                        input()
+                    elif check == "Continue":
+                        if random.randint(1,4) == 1:
+                            print("4X")
+                            check = input("Would you like to cash out:")
+                            if check == "Cash out":
+                                print("You have cashed out!")
+                                money += 40
+                                print(money)
+                                input()
+                            elif check == "Continue":
+                                if random.randint(1,5) == 1:
+                                    print("5X")
+                                    check = input("Would you like to cash  out:")
+                                if check == "Cash out":
+                                    print("You have cashed out!")
+                                    money += 80
+                                    print(money)
+                                    input()
+                                elif check == "Continue":
+                                    if random.randint(1,6) == 1:
+                                        print("6X")
+                                        check = input("Would you like to  cash out:")
+                                        if check == "Cash out":
+                                            print("You have cashed out!")
+                                            money += 160
+                                            print(money)
+                                            input()
+                                        elif check == "Continue":
+                                            if random.randint(1,7) == 1:
+                                              print("7X")
+                                              check = input("Would you like to cash out:")
+                                            if check == "Cash out":
+                                                print("You have cashed out!")
+                                                money += 320
+                                                print(money)
+                                                input()
+                                            elif check == "Continue":
+                                                    if random.randint(1,8) == 1:
+                                                        print("8X")
+                                                        check = input("Would you like to cash out:")
+                                                        if check == "Cash out":
+                                                            print("You have cashed out!")
+                                                            money += 640
+                                                            print(money)
+                                                            input()
+                                                        elif check == "Continue":
+                                                            if random.randint(1,9) == 1:
+                                                                print("9X")
+                                                                check = input("Would you like to cash out:")
+                                                                if check == "Cash out":
+                                                                    print("You have cashed out!")
+                                                                    money += 1280
+                                                                    input()
+                                                                    print(money)
+                                                                elif check == "Continue":
+                                                                    if random.randint(1,10) == 1:
+                                                                        print("JACKPOT!")
+                                                                        money += 5000
+                                     
+                                                                        print(money)
+                                                                        input()
+                                                                    else:
+                                                                        print("So close, yet not  quite")
+                                                            else:
+                                                                print("So close, yet not quite")
+                                                        else:
+                                                            print("So close, yet not quite")
+                                                    else:
+                                                        print("So close, yet not quite")
+                                            else:
+                                                print("So close, yet not quite")
+                                        else:
+                                            print("So close, yet not quite")
+                                else:
+                                    print("So close, yet not quite")
+                            else:
+                                print("So close, yet not quite")
+                        else:
+                            print("So close, yet not quite")
+                    else:
+                        print("So close, yet not quite")
+                else:
+                    print("So close, yet not quite")
+            else:
+                print("So close, yet not quite")
+        else:
+            print("So close, yet not quite")
+    else:
+        print("Sorry, but you have gambled all your money away!")
